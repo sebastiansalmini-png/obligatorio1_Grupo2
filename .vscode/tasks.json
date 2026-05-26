@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compilar archivo C actual",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "-Wall",
+        "${file}",
+        "-o",
+        "${fileBasenameNoExtension}.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}
